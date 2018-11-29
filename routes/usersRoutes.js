@@ -60,6 +60,17 @@ router.delete('/:id', (req,res,next) => {
 })
 
 
+//signup
+router.post('signup', function(req,res,next){
+  var hash = bcrypt.hashSync(req.Params.Password, 8)
+  Users().insert({
+    email: req.params.email,
+    password: hash
+  }, 'id').then(function(result){
+    res.redirect('/signin')
+  })
+})
+
 
 
 
