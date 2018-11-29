@@ -1,0 +1,28 @@
+{
+  "name": "git-lit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "knex": "^0.15.2",
+    "nodemon": "^1.18.7",
+    "pg": "^7.6.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
