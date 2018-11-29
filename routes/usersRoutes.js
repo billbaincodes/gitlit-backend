@@ -4,7 +4,7 @@ const knex = require('../db/connection.js')
 
 
 router.get('/', (req,res,next) => {
-  knex('users_bars')
+  knex('users')
   .then(users => {
     res.json({users: users})
   })
@@ -12,7 +12,7 @@ router.get('/', (req,res,next) => {
 
 router.get('/:id', (req,res,next) =>{
 const id = req.params.id
-  knex('users_bars')
+  knex('users')
   .where('id',id)
   .then((user) =>{
     if(!user.length){
@@ -26,7 +26,7 @@ const id = req.params.id
 
 router.post('/', (req,res,next) =>{
   // const body = req.body
-  knex('users_bars')
+  knex('users')
     .insert(req.body)
     .returning('*')
     .then((user) =>{
@@ -39,7 +39,7 @@ router.put('/:id', (req,res,next) => {
   const id = req.params.id
   const body = req.body
 
-  knex('users_bars')
+  knex('users')
     .where('id', id)
     .update(body)
     .returning('*')
@@ -50,7 +50,7 @@ router.put('/:id', (req,res,next) => {
 
 router.delete('/:id', (req,res,next) => {
   const id = req.params.id
-  knex('users_bars')
+  knex('users')
   .where('id', id)
   .del()
   .returning('*')
