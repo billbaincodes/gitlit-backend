@@ -6,22 +6,22 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('users_bars').insert([
         {
-          id: 7,
-          user_id: 1,
+          id: 1,
+          user_id: 7,
           bar_id: 1,
           stars: 2,
           comment: 'This bar was soft as cake'
         },
         {
-          id: 3,
-          user_id: 2,
+          id: 2,
+          user_id: 3,
           bar_id: 2,
           stars: 5,
           comment: 'This bar was Lit AF!!!'
         },
         {
-          id: 8,
-          user_id: 3,
+          id: 3,
+          user_id: 8,
           bar_id: 2,
           stars: 1,
           comment: 'Hard Pass'
