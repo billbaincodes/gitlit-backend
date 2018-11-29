@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
@@ -13,11 +14,12 @@ app.use(bodyParser.json())
 const usersRoute = require('./routes/usersRoutes.js')
 const barsRoute = require('./routes/barsRoutes.js')
 const user_barsRoute = require('./routes/users_barsRoute')
+const authRoute = require('./routes/auth.js')
 
 app.use('/users', usersRoute)
 app.use('/bars', barsRoute)
 app.use('/reviews', user_barsRoute)
-
+app.use('/auth', authRoute)
 
 app.get('/', (req, res) => {
   res.json('🍄')
@@ -40,7 +42,7 @@ function errorHandler(err, req, res, next) {
   res.status(500).send({
       error: err.message,
       stack,
-    url: req.originalUrl 
+    url: req.originalUrl
   })
 }
 
