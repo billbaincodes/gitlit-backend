@@ -5,6 +5,7 @@ exports.up = function(knex, Promise) {
     table.integer('user_id').references('users.id').unsigned().onDelete('cascade')
     table.integer('bar_id').references('bars.id').unsigned().onDelete('cascade')
     table.integer('stars')
+    table.string('comment')
   })
 };
 

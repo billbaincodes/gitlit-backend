@@ -58,6 +58,24 @@ exports.seed = function(knex, Promise) {
             "username": "blackoxy",
             "password": "anh",
             "active": false
+        },
+        {
+            "id": 7,
+            "first": "Victor",
+            "last": "Montoya",
+            "email": "victory@mail.com",
+            "username": "monty",
+            "password": "vicci",
+            "active": false
+        },        
+        {
+            "id": 8,
+            "first": "Matt",
+            "last": "Winzer",
+            "email": "matty@mail.com",
+            "username": "ftwinzer",
+            "password": "winwin",
+            "active": false
         }
     ]);
   });

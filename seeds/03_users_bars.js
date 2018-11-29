@@ -9,19 +9,22 @@ exports.seed = function(knex, Promise) {
           id: 1,
           user_id: 1,
           bar_id: 1,
-          stars: 2
+          stars: 2,
+          comment: 'This bar was soft as cake'
         },
         {
           id: 2,
           user_id: 2,
           bar_id: 2,
-          stars: 5
+          stars: 5,
+          comment: 'This bar was Lit AF!!!'
         },
         {
           id: 3,
           user_id: 3,
           bar_id: 2,
-          stars: 1
+          stars: 1,
+          comment: 'Hard Pass'
         }
       ]);
     });
