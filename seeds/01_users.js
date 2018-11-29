@@ -1,7 +1,7 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex.raw('DELETE FROM "users"; ALTER SEQUENCE users_id_seq RESTART WITH 6;')
+  return knex.raw('DELETE FROM "users"; ALTER SEQUENCE users_id_seq RESTART WITH 7;')
     .then(function () {
       // Inserts seed entries
       return knex('users').insert([
@@ -48,6 +48,15 @@ exports.seed = function(knex, Promise) {
             "email": "robhill@mail.com",
             "username": "robhill",
             "password": "hill",
+            "active": false
+        },
+        {
+            "id": 6,
+            "first": "Anh",
+            "last": "Nguyen",
+            "email": "anhabanana@mail.com",
+            "username": "blackoxy",
+            "password": "anh",
             "active": false
         }
     ]);

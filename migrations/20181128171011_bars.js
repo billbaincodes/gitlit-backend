@@ -5,7 +5,6 @@ exports.up = function(knex, Promise) {
     table.increments()
     table.string('name')
     table.string('location')
-    table.integer('star_avg')
     table.integer('user_count')
   })
 };
