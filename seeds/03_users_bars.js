@@ -6,21 +6,21 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('users_bars').insert([
         {
-          id: 1,
+          id: 7,
           user_id: 1,
           bar_id: 1,
           stars: 2,
           comment: 'This bar was soft as cake'
         },
         {
-          id: 2,
+          id: 3,
           user_id: 2,
           bar_id: 2,
           stars: 5,
           comment: 'This bar was Lit AF!!!'
         },
         {
-          id: 3,
+          id: 8,
           user_id: 3,
           bar_id: 2,
           stars: 1,
