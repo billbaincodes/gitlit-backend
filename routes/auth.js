@@ -1,10 +1,14 @@
-var express = require('express');
-var router = express.Router();
-var bcrypt = require('bcryptjs');
-var jwt = require('jsonwebtoken');
+const express = require('express');
+const router = express.Router();
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
-const knex = require('../db/connection');
+const knex = require('../db/connection.js');
 
+
+router.get('/', function(req,res,next){
+  res.send('I Work')
+})
 
 //signup
 router.post('/signup', function(req,res,next){
