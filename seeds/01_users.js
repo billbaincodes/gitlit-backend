@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
             "first": "Jody",
             "last": "Isaguirre",
             "email": "jody@mail.com",
-            "username": "jodyisaquirre",
+            "username": "N0L1m1t",
             "password": "irre",
             "active": false
         },
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
             "first": "Victor",
             "last": "Montoya",
             "email": "victory@mail.com",
-            "username": "monty",
+            "username": "v_monty",
             "password": "vicci",
             "active": false
         },        
