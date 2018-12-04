@@ -10,13 +10,14 @@ router.get('/', function(req,res,next){
   res.send('I Work')
 })
 
+
+
+
 //signup
 router.post('/signup', function(req,res,next){
   const email = req.body.email
   const body = req.body
   const password = req.body.password
-  const username = req.body.username
-
   knex('users')
     .where('email', email)
     .then(user =>{
@@ -38,7 +39,6 @@ router.post('/signup', function(req,res,next){
       else{
         res.json({error: 'Email already registered.'})
       }
-      console.log(user)
     })
 
 });
