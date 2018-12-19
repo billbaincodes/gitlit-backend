@@ -20,7 +20,7 @@ exports.seed = function(knex, Promise) {
           last: "Bain",
           email: "bill@mail.com",
           username: "billbain",
-          password: "bain",
+          password: "b4in",
           active: false
         },
         {
